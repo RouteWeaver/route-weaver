@@ -1,0 +1,56 @@
+:root {
+	--green-dark: #153D22;
+    --green-light: #275435;
+
+    --orange-dark: #E25F00;
+    --orange-light: #EE8F00;
+
+    --white: #FFFFFF;
+
+    --font-family: Roboto A1
+}
+
+body {
+    margin: 0;
+    background-color: var(--green-light);
+    font-family: var(--font-family);
+    font-size: 1rem;
+}
+
+#navbar {
+    background-color: #153D22;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    margin: 0;
+    position: fixed;
+    width: 100vw;
+    z-index: 9;
+}
+
+#navbar-img {
+    height: 3rem;
+    margin: 0 20px;
+}
+
+#nav-links {
+    list-style: none;
+    display: flex;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: var(--white);
+    line-height: 4rem;
+    padding: 0 20px;
+}
+
+#nav-links a:hover {
+    background-color: var(--orange-light);
+}
+
+#hike-bg {
+    max-width: 100vw;
+    opacity: 40%;
+}
