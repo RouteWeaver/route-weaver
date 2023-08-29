@@ -92,18 +92,19 @@ div.buffer {
 }
 
 .alt-color {
-    color: var(--orange-light);
+    color: var(--orange-dark);
 }
 
 #about {
     width: 100vw;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
-.info-left {
+.info-left, .info-right {
+    width: calc(100vw - 20px);
+    max-width: 700px;
     padding: 20px;
-    width: 600px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -112,4 +113,52 @@ div.buffer {
 .info-left img {
     height: 400px;
     margin-right: 40px;
+}
+
+.info-right img {
+    height: 400px;
+    margin-left: 40px;
+}
+
+#sign-up {
+    width: 100vw;
+    padding: 20px;
+    background-color: #153D22;
+    color: var(--white);
+    display: grid;
+    justify-content: center;
+}
+
+#sign-up-form {
+    width: calc(100vw - 20px);
+    max-width: 700px;
+    padding: 20px;
+    text-align: start;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+input[type=submit] {
+    width: 300px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    float: right;
+    border: none;
+    border-radius: 4px;
+    background-color: #EE8F00;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #E25F00;
 }
