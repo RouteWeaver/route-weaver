@@ -122,7 +122,6 @@ div.buffer {
 
 #sign-up {
     width: 100vw;
-    padding: 20px;
     background-color: #153D22;
     color: var(--white);
     display: grid;
