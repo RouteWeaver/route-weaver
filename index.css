@@ -112,6 +112,7 @@ div.buffer {
 
 #about {
     width: 100vw;
+    margin-bottom: 36px;
     display: grid;
     justify-content: center;
 }
