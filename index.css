@@ -3,6 +3,7 @@
     --green-dark-trans: rgb(21, 61, 34, 0.8);
     --green-light: #275435;
     --green-light-trans: rgb(39, 84, 53, 0.6);
+    --green-lighter: #479A61;
 
     --orange-dark: #E25F00;
     --orange-light: #EE8F00;
@@ -20,6 +21,8 @@ html {
 }
 
 body {
+    max-width: 100%;
+    overflow-x: hidden;
     margin: 0;
     background-color: var(--white);
     font-family: var(--font-family);
@@ -64,7 +67,7 @@ h1, h2, h3 {
     text-decoration: none;
     color: var(--white);
     line-height: 64px;
-    padding: 0 20px;
+    padding: 0 12px;
 }
 
 #nav-links a:hover {
@@ -95,6 +98,18 @@ div.buffer {
     color: var(--orange-dark);
 }
 
+.light-color {
+    color: var(--green-lighter);
+}
+
+.light-color > a {
+    color: var(--green-lighter);
+}
+
+.light-color > a:hover {
+    color: var(--white);
+}
+
 #about {
     width: 100vw;
     display: grid;
@@ -102,21 +117,23 @@ div.buffer {
 }
 
 .info-left, .info-right {
-    width: calc(100vw - 20px);
+    width: calc(100vw - 40px);
     max-width: 700px;
-    padding: 20px;
+    margin: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
+.info-left img, .info-right img {
+    height: 300px;
+}
+
 .info-left img {
-    height: 400px;
     margin-right: 40px;
 }
 
 .info-right img {
-    height: 400px;
     margin-left: 40px;
 }
 
