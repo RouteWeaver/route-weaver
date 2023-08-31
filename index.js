@@ -16,3 +16,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 })
+
+const doNothing = () => {
+    Swal.fire({
+        icon: "success",
+        title: "Thanks for joining our mailing list!",
+        showConfirmButton: false,
+        timer: 1500
+    });
+    return false;
+}

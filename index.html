@@ -18,6 +18,7 @@
 	<meta name=”x-apple-disable-message-reformatting”/>
 	<meta name="twitter:card" content="summary_large_image"/>
 	<meta name="twitter:image" content="img/logo.svg"/>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 	<script src="index.js"></script>
 </head>
 <body id="body">
@@ -34,37 +35,36 @@
         <a href="#"><img src="img/logo.svg" id="navbar-img"/></a>
         <ul id="nav-links">
             <a href="#about">About</a>
-            <a href="#sign-up">Sign&#10;Up</a>
-            <a href="#our-team">Our Team</a>
+            <a href="#sign-up">Sign Up</a>
         </ul>
     </nav>
-    <!-- Lorem<br/>ipsum<br/>dolor<br/>sit<br/>amet<br/>consectetur<br/>adipisicing<br/>elit.<br/>Nesciunt<br/>a<br/>saepe<br/>nihil<br/>aut<br/>quam<br/>totam.<br/>Officiis<br/>consequatur<br/>mollitia<br/>libero<br/>assumenda<br/>in<br/>ipsa,<br/>totam<br/>ut<br/>minima<br/>suscipit.<br/>Cum<br/>sed,<br/>neque,<br/>ducimus<br/>adipisci<br/>qui<br/>accusantium<br/>fugiat<br/>beatae<br/>amet<br/>vel<br/>labore<br/>temporibus<br/>reiciendis<br/>dolor,<br/>dolores<br/>perferendis<br/>fuga<br/>inventore.<br/>Quaerat,<br/>unde<br/>laudantium,<br/>aspernatur<br/>eius<br/>odio<br/>recusandae<br/>architecto<br/>natus<br/>nobis<br/>at<br/>sit<br/>fugiat<br/>minus<br/>in<br/>facilis<br/>odit<br/>nemo<br/>maiores<br/>dolores<br/>incidunt<br/>excepturi<br/>voluptatum<br/>voluptatibus.<br/>Repellendus,<br/>reiciendis<br/>id<br/>et<br/>nihil<br/>cum<br/>quasi<br/>voluptatum<br/>officia<br/>quis.<br/>Quo,<br/>dolorem<br/>illo<br/>inventore<br/>autem<br/>sint,<br/>recusandae<br/>sed<br/>corporis<br/>nam<br/>commodi<br/>nesciunt<br/>sequi<br/>tempore,<br/>repellendus<br/>rem<br/>blanditiis<br/>facere<br/>consequuntur minus iure! -->
     <section id="about">
+        <div id="buffer" class="buffer"></div>
         <div class="info-left">
-            <img src="img/edit-route.svg"/>
+            <img src="img/generate.png"/>
             <div>
                 <h3>AI-generated routes</h3>
-                <p>Customise your routes with RouteWeaver! Our <span class="alt-color">advanced AI models</span> take into consideration your preferences and recommends routes in sections. Out of the options provided, pick the one you like the most! Don't like them? Refresh!</p>
+                <p>Customise your hikes with <span class="alt-color">RouteWeaver</span>! Our advanced AI models take into consideration your preferences and helps you plan your routes step by step. Don't like the recommendations provided? Refresh!</p>
             </div>
         </div>
         <div class="info-right">
             <div>
-                <h3>AI-generated routes</h3>
-                <p>Customise your routes with RouteWeaver! Our advanced AI models take into consideration your preferences and recommends routes in sections. Out of the options provided, pick the one you like the most! Don't like them? Refresh!</p>
+                <h3>Engage with the hiking community</h3>
+                <p>Share your favourite routes on <span class="alt-color">RouteWeaver</span>'s community feed! Browse your feed to explore routes completed by other hikers. See anything you like? Save them for later!</p>
             </div>
-            <img src="img/edit-page.svg"/>
+            <img src="img/home.png"/>
         </div>
         <div class="info-left">
-            <img src="img/edit-route.svg"/>
+            <img src="img/route-details.png"/>
             <div>
-                <h3>AI-generated routes</h3>
-                <p>Customise your routes with RouteWeaver! Our advanced AI models take into consideration your preferences and recommends routes in sections. Out of the options provided, pick the one you like the most! Don't like them? Refresh!</p>
+                <h3>Organise hikes with friends</h3>
+                <p>Invite your friends to join you on your hike! <span class="alt-color">RouteWeaver</span> enables you to seamlessly add participants and set a start time for the hike, taking away the hassle of organising a social hike.</p>
             </div>
         </div>
     </section>
     
     <section id="sign-up">
-        <form id="sign-up-form" onsubmit="">
+        <form id="sign-up-form" onsubmit="doNothing(); return false;">
             <h1 id="sign-up-header">Interested? Join our mailing list!</h1>
             <label for="name">Name</label>
             <br/>
@@ -75,6 +75,8 @@
             <input name="email" type="text" placeholder="Your email..."/>
             <br/>
             <input type="submit" value="Submit"/>
+            <br/>
+            <span class="light-color">Developed by: <a href="https://www.linkedin.com/in/brenda-hang/">Brenda</a>, <a href="https://www.izzhafeez.com/">Hafeez</a>, <a href="https://www.instagram.com/brooderbrass/">Justin</a> and <a href="https://www.linkedin.com/in/weiquu/">Wei Qing</a> </span>
         </form>
     </section>
 </body>
