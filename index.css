@@ -7,7 +7,7 @@
 
     --orange-dark: #E25F00;
     --orange-light: #EE8F00;
-    --orange-light-trans: rgb(238, 143, 0, 1);
+    --orange-light-trans: rgb(238, 143, 0, 0.5);
 
     --white: #FFFFFF;
     --white-trans: rgb(256, 256, 256, 1);
@@ -24,7 +24,9 @@ body {
     max-width: 100%;
     overflow-x: hidden;
     margin: 0;
-    background-color: var(--white);
+    /* background-color: var(--white); */
+    background-image: linear-gradient(var(--green-dark), var(--green-light));
+    color: white;
     font-family: var(--font-family);
     font-size: 1rem;
 }
@@ -95,7 +97,7 @@ div.buffer {
 }
 
 .alt-color {
-    color: var(--orange-dark);
+    color: var(--orange-light);
 }
 
 .light-color {
@@ -128,6 +130,7 @@ div.buffer {
 
 .info-left img, .info-right img {
     height: 300px;
+    border: var(--orange-light-trans) solid 2px;
 }
 
 .info-left img {
